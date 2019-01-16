@@ -1,0 +1,16 @@
+﻿Server Production
+DB Server
+IP: 203.151.173.58 
+User: K2Admin
+Password: Admin^K2
+
+SharePoint App 
+203.151.173.57
+User:K2Admin 
+Password: Admin^K2
+
+K2 App 
+203.151.173.58
+User:K2Admin 
+Password: Admin^K2
+

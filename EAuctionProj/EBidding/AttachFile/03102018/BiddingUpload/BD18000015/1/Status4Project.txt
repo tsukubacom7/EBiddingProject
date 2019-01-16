@@ -1,0 +1,46 @@
+﻿--================== Used ================
+In Process
+Rejected
+Draft
+Completed
+Approved
+--========================================
+
+
+Send for Approval
+Send for approval completed successfully.
+
+Completed
+Cancelled
+Rejected
+Created
+Approved
+Submitted
+Draft
+
+https://eprdev/Runtime/Runtime/Form/frmAddFlight/?&booktype=FH&reqid=52
+
+
+https://eprdev/Runtime/Runtime/Form/frmApproveBooking/?_State=_base&ApproveType=RA&SerialNo=22_84&booktype=F&reqid=10083
+
+
+http://sp2016dev.gulf.co.th/sites/OilWebsite/_layouts/15/settings.aspx?Source=http%3A%2F%2Fsp2016dev%2Egulf%2Eco%2Eth%2Fsites%2FOilWebsite%2FLists%2FExpireReminder%
+
+
+
+Admin Approve Booking
+
+K2Admin <k2admin@gulf.co.th>
+
+
+
+Requested by: Preecha Jaihan
+Request type: Flight
+Objective: ขออนุมัติการเดินทางไปโยกงบประมาณในหมวด 
+Total Amount(THB): 3,450.00
+Reference no.: GCC-PC-17-0060
+Request Date: 4/5/2017
+Status: Waiting for approval
+You can view by: https://eprdev/Runtime/Runtime/Form/frmAddFlight/?&booktype=F&reqid=10108
+Best regards,
+Online Reservation System by CSC 

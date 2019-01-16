@@ -1,0 +1,29 @@
+﻿สำหรับการออกบิลที่จะเลือก company
+เพิ่ม Field: Billing Company
+
+ออกบิลยังไง 
+
+Detail ว่า level ไหนจองโรงแรม
+
+Flow จะวิ่งไปที่ โดยอิงจาก passenger ;หรือยังไงดี
+ถ้า group เดียวกันแต่ต่าง department จะเดินทางอย่างไร? 
+
+Memo อนุมัติแล้ว ยังต้องมา key ในระบบได้อีกหรือไม่?
+
+Room Type: Twin Bed, Double Bed
+
+รายละเอียดงานที่ต้องแก้ไขเพิ่มเติม
+คนขับรถ ต้องเข้าระบบไหม? ไม่ต้องเข้าระบบ 
+เพิ่ม Field: Billing Company
+--=================================================================
+1.การวิ่ง flow ต้องเลือก requester? จะเลือกตาม company ของ requester ไม่ได้ใช้ field billing company.
+2.แก้ไข filed Select Company เป็น Billing Company
+
+e-reservation.gulf.co.th
+
+
+GULF ENERGY Development Public Company Limited
+
+Billing Company
+
+Cancel request was successfully.

@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EAuctionProj.SiteMaster" %>
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/jquery-latest.min.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div>
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/ebidding1.jpg" Width="100%" />
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">Log In</a>
+                        ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold">
+                            <asp:LoginName ID="HeadLoginName" runat="server" />
+                        </span>! [
+                        <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out"
+                            LogoutPageUrl="~/Account/Login.aspx" OnLoggingOut="HeadLoginStatus_LoggingOut" />
+                        ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
+                    IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Form/Default.aspx" Text="Home" Value="1" />
+                        <asp:MenuItem NavigateUrl="~/Form/BidingProjectList.aspx" Text="Price Submission"
+                            Value="2" />
+                        <asp:MenuItem NavigateUrl="~/Form/BidingProjectHistory.aspx" Text="Bidding History"
+                            Value="5" />
+                        <asp:MenuItem NavigateUrl="~/Form/VendorBiddingHistory.aspx" Text="Vendor History"
+                            Value="7" />
+                        <asp:MenuItem NavigateUrl="~/Form/CompanyUser.aspx" Text="Company User" Value="4" />
+                        <asp:MenuItem NavigateUrl="~/Form/CreateProject.aspx" Text="Create Project" Value="3" />
+                        <asp:MenuItem NavigateUrl="~/Form/ItemProjectList.aspx" Text="Create Template Project"
+                            Value="6" />
+                        <asp:MenuItem NavigateUrl="~/Form/CompanyUserDetail.aspx" Text="User Profile" Value="8" />
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    </form>
+</body>
+</html>
